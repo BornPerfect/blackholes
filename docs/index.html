@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Black Holes</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="box-wrap">
+      <div class="box one"></div>
+      <div class="box two"></div>
+      <div class="box three"></div>
+      <div class="box four"></div>
+      <div class="box five"></div>
+      <div class="box six"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <header>
+      <a class="logo" href="/"><img src="images/logo.png" alt="logo"></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="#definition">DEFINITION</a></li>
+          <li><a href="#formation">FORMATION</a></li>
+          <li><a href="#types">TYPES</a></li>
+          <li><a href="#structure">STRUCTURE</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#">Contact</a>
+      <p class="menu cta">Menu</p>
+    </header>
+    <div class="overlay">
+      <a class="close">&times;</a>
+      <div class="overlay__content">
+        <a href="#definition">DEFINITION</a>
+        <a href="#formation">FORMATION</a>
+        <a href="#types">TYPES</a>
+        <a href="#structure">STRUCTURE</a>
+      </div>
+    </div>
+    <div id="progressbar"></div>
+    <div class="content">
+      <section id="definition">
+        <p>BLACK HOLES ARE points in space that are so dense they create deep gravity sinks. Beyond a certain region,
+          not even light can escape the powerful tug of a black hole's <br>gravity.</p>
+      </section>
+      <section id="formation">
+        <h1>Formation</h1>
+        <p>Black holes only form under certain conditions. Most black holes form when the center of
+          a very big star collapses in on itself. When this happens, it causes a phenomenon called
+          a Supernova, which is when an exploding star blasts a part of it into space. <br> <br>
+          Of Course, there are several other ways in which these bizarre interstellar bodies are
+          formed. One of which are Gravitational Collapse, which means when an objects internal
+          pressure is insufficient to resist the objects own gravity. This happens when a star has
+          burnt out all it's hydrogen and helium and cannot maintain it's temperature. This is
+          what causes a supernova. <br> <br>
+          Another way in which black holes form is High-Energy Collisions. While taking into
+          account that no such events have been detected, in theory, in such an event where a
+          large interstellar body collides with another, should the collision achieve a sufficient
+          density, a black hole would form. Such
+          Micro Black Holes may have been created at the Large Hadron Collider (LHC) but they
+          would evaporate in 10^-25 seconds due to they're size and Hawking Radiation. <br> <br>
+          Once a Black hole has been formed, It can keep growing by absorbing additional matter.
+          Black holes are so dense that they're gravity can dwarf the gravity of regular stars.
+          The mass of the black hole is concentrated to a single point in space time, called a
+          singularity. It is considered to be 0-dimensional and the very center of the black hole.
+          Learn more about these in Structure.</p>
+      </section>
+      <section id="types">
+        <h1>Types</h1>
+        <p>There are around 4 known types of Black Holes: <br> <br>
+          Stellar: These Black holes are small, but deadly. They may be small, but don't
+          let that deceive you. Black holes can pack around 3 times the mass of the sun
+          into the diameter of a city. These are the black holes which are formed after
+          the gravitational collapse of large stars. The immense density of the black
+          hole causes a significant amount of gravitational pull. According to the
+          Harvard-Smithsonian Center for Astrophysics, the Milky Way contains around a
+          few hundred million stellar black holes. <br> <br>
+          Supermassive: These Black holes may be the diameter of the sun, but again,
+          don't let that deceive you. But their mass can be millions or even billions the
+          mass of the sun. Scientists aren't exactly sure on how these super giants spawn
+          but they have some theories. It could be Large Gas Clouds, collapsing together.
+          It may also be the result of hundreds or thousands of black holes that merge
+          together. It could be a stellar cluster all collapsing together or they could
+          have arisen from dark matter, however the properties of it are unknown as it
+          does not emit light and cannot be directly observed. <br> <br>
+          Intermediate: These black holes come of intermediate size, and can eventually
+          form a supermassive black hole. They are theorized to exist in the centers of
+          dwarf (very small) galaxies. <br> <br>
+          Miniature: The concept that black holes exist smaller than stellar mass was
+          introduced by Stephen Hawking in 1971. These black holes are also called
+          quantum mechanical black holes or mini black holes. They are thought to be
+          formed by high-energy or light-speed collisions.</p>
+      </section>
+      <section id="structure">
+        <h1>Structure</h1>
+        <img src="images/structure.jpg" alt="">
+        <p>Singularity: The region of the black hole where all it's mass has
+          been compressed down to a single point in space time. Due to this,
+          it has almost an infinite density and creates immense gravitational
+          force. <br>
+          Event Horizon: This is what scientists call,
+          "The Point of No
+          Return"
+          . Any object, as well as light cannot escape the immense
+          gravitational pull of the black holes. <br>
+          Photon Sphere: This is the location near a black hole where gravity
+          is so strong, that light travels in circles. Photons orbit the black
+          hole at this distance. <br>
+          Acceleration Disc: This is a disc made of stellar, or planetary
+          matter that spirals towards the black hole. <br>
+          The Ergosphere: If the black hole rotates, then it's mass causes
+          space time around it to rotate as well. This region is known as the
+          Ergosphere. Spaghettification generally begins here. <br>
+          Relativistic Jets: For Large Black holes, high intensity magnetic
+          fields are emitted perpendicular to the acceleration disc. This
+          causes a jet of charged particles to circle them and creates jets of
+          gas.</p>
+      </section>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript">
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop(),
+        dh = $(document).height(),
+        wh = $(window).height();
+      scrollPercent = (scroll / (dh - wh)) * 100;
+      $('#progressbar').css('height', scrollPercent + '%');
+    })
+  </script>
+  <script type="text/javascript" src="mobile.js"></script>
+</body>
+
+</html>
